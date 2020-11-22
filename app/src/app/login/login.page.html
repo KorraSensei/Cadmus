@@ -1,0 +1,36 @@
+<ion-header no-border>
+    <div class="login-header ion-padding">
+      <img class="logo-img" src="assets/cloud.png">
+    </div>
+</ion-header>
+
+<ion-content style = "color:white;">
+
+<div class = "center">
+  
+  <div heading-column-1r>
+    <h1 big-heading>Login</h1>
+    </div>
+  <ion-label>
+    Join us to connect to hotspots near you or start earning money!
+  </ion-label>
+
+  <ion-item transparent>
+    <img icon-small src="assets/user.png" />
+    <ion-input [(ngModel)]="username" placeholder="Email" type="text"></ion-input>
+  </ion-item>
+  <ion-item transparent>
+    <img icon-small src = "assets/lock.jpg" />
+    <ion-input [(ngModel)]="password" placeholder="password" type="password"></ion-input>
+  </ion-item>
+  <ion-label class="forgot-password"><span class="link button" (click)="recover()">Forgot Password?</span></ion-label>
+
+  <div linespace></div>
+  <ion-button color = "secondary" class="ion-button-class1" shape = "round" fill="solid" size="large" expand="block"
+  (click)="login()">LOGIN</ion-button>
+  <ion-label class="ion-text-center"><span class="link button" (click)="go()">Don't have Account? Sign Up</span></ion-label>
+
+</div>
+
+
+</ion-content>

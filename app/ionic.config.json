@@ -1,0 +1,7 @@
+{
+  "name": "hotspot",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
